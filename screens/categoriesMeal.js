@@ -1,6 +1,6 @@
 import React from 'react';
-import {PlatForm} from 'react-native';
-import {View,Text,StyleSheet,FlatList} from 'react-native';
+
+import {StyleSheet,FlatList} from 'react-native';
 
 import{ CATEGORIES} from '../data/12.1 dummy-data.js'
 import CategoryGrid from '../components/categoryGridTile'

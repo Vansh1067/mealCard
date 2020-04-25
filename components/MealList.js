@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {View,Text,StyleSheet,Button} from 'react-native';
-
+import {useSelector} from 'react-redux'
 import { FlatList } from 'react-native-gesture-handler';
 import MealItem from '../components/MealItem';
 
 const MealList = props =>{
+
+    
     const displayRenderItem =(itemData)=>{
+        
+        
+        
+        
     return <MealItem data={itemData.item} onSelect={()=>{props.navigation.navigate({routeName:'DetailScreen',params:{
-        mealId:itemData.item.id
+        mealId:itemData.item.id,
+        mealTitle:itemData.item.title,
+        
+      
+
     }})}}></MealItem>
     }
     
